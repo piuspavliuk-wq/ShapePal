@@ -4,7 +4,6 @@ import { MobileMenu } from "./MobileMenu";
 
 export function LegalHeader({ backHref = "/support", backLabel = "Back to Support" }: { backHref?: string; backLabel?: string }) {
   const legalNavLinks = [
-    { href: "/", label: "Головна" },
     { href: "/support", label: "Support" },
     { href: "/terms", label: "Terms" },
     { href: "/privacy", label: "Privacy" },
