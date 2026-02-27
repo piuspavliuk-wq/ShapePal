@@ -55,10 +55,10 @@ export default function Home() {
         <section className="relative border-b border-zinc-800 bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-20 md:overflow-visible md:py-28">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-              Built for Results
+              Workout Plan & Calorie Counter to Lose Fat
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-zinc-400">
-              Follow structured workouts, scan your meals, and see results that matter.
+              Follow a structured workout plan, count calories accurately, and lose fat while tracking every step of your body transformation.
             </p>
             <div className="mt-10 flex justify-center">
               <DownloadButtons />

@@ -5,17 +5,17 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://shapepal.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://shapepal.fit";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "ShapePal – Workouts, Calorie Counter & Fitness Transformation Plan",
+      "ShapePal – Workout Plan, Calorie Counter & Lose Fat App",
     template: "%s | ShapePal",
   },
   description:
-    "ShapePal helps you plan workouts, count calories, and achieve your fitness transformation. Track progress, build custom workout plans, and reach your body goals with ShapePal.",
+    "ShapePal helps you plan workouts, count calories and lose fat with a structured workout plan. Track progress, burn fat and achieve your fitness transformation with ShapePal.",
   keywords: [
     "ShapePal",
     "ShapePal workouts",
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "calorie counter",
     "fitness transformation",
     "workout plan",
+    "lose fat",
+    "lose weight",
+    "fat loss workout plan",
     "fitness app",
     "body transformation",
     "calorie tracker",
@@ -44,12 +47,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "ShapePal",
-    title: "ShapePal – Workouts, Calorie Counter & Fitness Transformation",
+    title: "ShapePal – Workout Plan, Calorie Counter & Lose Fat App",
     description:
-      "Plan workouts, count calories, and achieve your fitness transformation with ShapePal.",
+      "Plan workouts, count calories and follow a fat loss workout plan to lose fat and transform your body with ShapePal.",
     images: [
       {
-        url: "/logo.png",
+        url: "/img/logo.png",
         width: 1200,
         height: 630,
         alt: "ShapePal – Fitness & Transformation",
@@ -58,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShapePal – Workouts, Calorie Counter & Fitness Transformation",
+    title: "ShapePal – Workout Plan, Calorie Counter & Lose Fat App",
     description:
-      "Plan workouts, count calories, and achieve your fitness transformation with ShapePal.",
+      "Plan workouts, count calories and follow a fat loss workout plan to lose fat and transform your body with ShapePal.",
   },
   alternates: {
     canonical: siteUrl,
