@@ -7,22 +7,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      // Додайте сюди шляхи, які не потрібно індексувати, якщо буде потреба
+      // disallow: ["/api/"],
     },
     sitemap: `${siteUrl}/sitemap.xml`,
-  };
-}
-
-import { MetadataRoute } from "next";
-
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://shapepal.com";
-
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/api/"],
-    },
-    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
