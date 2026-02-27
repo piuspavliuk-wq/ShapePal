@@ -29,7 +29,6 @@ export default function SupportPage() {
           {/* Support cards */}
           <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-16">
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 text-center transition hover:border-[#00EBC4]/40 hover:shadow-[0_8px_24px_rgba(0,235,196,0.12)]">
-              <div className="text-4xl mb-4">📧</div>
               <h2 className="text-lg font-semibold text-white mb-2">Contact Us</h2>
               <p className="text-sm text-zinc-500 mb-4">Get in touch with our support team</p>
               <a
@@ -40,7 +39,6 @@ export default function SupportPage() {
               </a>
             </div>
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 text-center transition hover:border-[#00EBC4]/40">
-              <div className="text-4xl mb-4">❓</div>
               <h2 className="text-lg font-semibold text-white mb-2">FAQ</h2>
               <p className="text-sm text-zinc-500 mb-4">Find answers to common questions</p>
               <Link
@@ -51,7 +49,6 @@ export default function SupportPage() {
               </Link>
             </div>
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 text-center transition hover:border-[#00EBC4]/40">
-              <div className="text-4xl mb-4">📱</div>
               <h2 className="text-lg font-semibold text-white mb-2">App Features</h2>
               <p className="text-sm text-zinc-500 mb-4">Learn about ShapePal&apos;s capabilities</p>
               <Link
@@ -62,7 +59,6 @@ export default function SupportPage() {
               </Link>
             </div>
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 text-center transition hover:border-[#00EBC4]/40">
-              <div className="text-4xl mb-4">🗑️</div>
               <h2 className="text-lg font-semibold text-white mb-2">Delete Account</h2>
               <p className="text-sm text-zinc-500 mb-4">Request account deletion or delete in-app</p>
               <Link
@@ -155,18 +151,18 @@ export default function SupportPage() {
             <h2 className="text-2xl font-bold text-white mb-8 text-center">App Features</h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { icon: "🏋️", title: "Workout Programs", desc: "Access structured workout programs designed for all fitness levels" },
-                { icon: "📊", title: "Progress Tracking", desc: "Track your workouts, weight, and fitness progress over time" },
-                { icon: "🍎", title: "Nutrition Tracking", desc: "Log your meals and track calories with our barcode scanner" },
-                { icon: "📅", title: "Workout Schedule", desc: "Plan and organize your training schedule" },
-                { icon: "🔥", title: "Streak Tracking", desc: "Build consistency with daily workout streaks" },
-                { icon: "⏰", title: "Reminders", desc: "Set reminders to never miss a workout" },
+                { title: "Workout Programs", desc: "Access structured workout programs designed for all fitness levels" },
+                { title: "Progress Tracking", desc: "Track your workouts, weight, and fitness progress over time" },
+                { title: "Nutrition Tracking", desc: "Log your meals and track calories with our barcode scanner" },
+                { title: "Workout Schedule", desc: "Plan and organize your training schedule" },
+                { title: "Streak Tracking", desc: "Build consistency with daily workout streaks" },
+                { title: "Reminders", desc: "Set reminders to never miss a workout" },
               ].map((f) => (
                 <div
                   key={f.title}
                   className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition hover:border-[#00EBC4]/40"
                 >
-                  <h3 className="text-white font-semibold mb-2">{f.icon} {f.title}</h3>
+                  <h3 className="text-white font-semibold mb-2">{f.title}</h3>
                   <p className="text-zinc-500 text-sm">{f.desc}</p>
                 </div>
               ))}

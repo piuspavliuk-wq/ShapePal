@@ -1,16 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import { DownloadButtons } from "./components/DownloadButtons";
+import { MobileMenu } from "./components/MobileMenu";
 import { PageLoader } from "./components/PageLoader";
 import { PhoneCarousel } from "./components/PhoneCarousel";
+
+const HOME_NAV_LINKS = [
+  { href: "#transformation", label: "Results" },
+  { href: "/support", label: "Support" },
+  { href: "/terms", label: "Terms" },
+  { href: "/privacy", label: "Privacy" },
+];
 
 export default function Home() {
   return (
     <PageLoader>
       <>
-      <header className="bg-zinc-900">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-          <a href="/" className="flex items-center gap-2" aria-label="ShapePal Home">
+      <header className="bg-zinc-900" style={{ paddingTop: "env(safe-area-inset-top)" }}>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 min-h-[44px] md:py-4">
+          <a href="/" className="flex items-center gap-2 min-h-[44px] shrink-0" aria-label="ShapePal Home">
             <span className="text-xl font-semibold tracking-tight text-white">
               Shape
             </span>
@@ -22,14 +30,24 @@ export default function Home() {
               className="rounded-lg"
             />
           </a>
-          <nav className="hidden gap-6 md:flex" aria-label="Main navigation">
+          <nav className="hidden gap-6 md:flex md:items-center" aria-label="Main navigation">
             <a
               href="#transformation"
-              className="text-sm font-medium text-zinc-400 transition hover:text-white"
+              className="text-sm font-medium text-zinc-400 transition hover:text-white py-2"
             >
               Results
             </a>
+            <Link href="/support" className="text-sm font-medium text-zinc-400 transition hover:text-white py-2">
+              Support
+            </Link>
+            <Link href="/terms" className="text-sm font-medium text-zinc-400 transition hover:text-white py-2">
+              Terms
+            </Link>
+            <Link href="/privacy" className="text-sm font-medium text-zinc-400 transition hover:text-white py-2">
+              Privacy
+            </Link>
           </nav>
+          <MobileMenu links={HOME_NAV_LINKS} />
         </div>
       </header>
 
